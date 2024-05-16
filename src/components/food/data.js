@@ -50,26 +50,26 @@ url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,
     id:12 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/10/0fd9e982-967c-480e-948a-0c4528c48c1c_868526.jpg"
 },
-,{
+{
 
     id:13 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e88dfda7a02e3919841449af66b7a3dd"
 }
-,,{
+,{
 
     id:14 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ooecv9ldmaflfs2vybir"
 }
-,,{
+,{
 
     id:15 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/466acbe7bf9253c23c7038fea17690d7"
-},,{
+},{
 
     id: 16,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jfrivshwwfyyuwgvgl9w"
 }
-,,{
+,{
 
     id:17 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/aucqxluqnoeecdj5qtis"
