@@ -74,7 +74,7 @@ url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,
     id:17 ,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/aucqxluqnoeecdj5qtis"
 }
-,,{
+,{
 
     id: 18,
     url:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ydqmrieo3fpqz5oa4cua"
