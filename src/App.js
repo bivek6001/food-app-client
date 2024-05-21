@@ -3,6 +3,7 @@ import './App.css';
 import Foods from './components/food/Foods';
 import Header from './components/header/Header';
 import Cart from './components/cart/Cart';
+import Test from './test';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,19 +13,25 @@ import {
 import Footer from './components/footer/Footer';
 import Signin from './components/auth/Signin';
 import Signup from './components/auth/Signup';
+import Details from './components/details/Details';
+import Protected from './Protected';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import Loading from './components/loading/Loading';
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <> <Header/>
+      <Protected>   <> <Header/>
       <Foods/>
-      <Footer/></>
+      <Footer/></></Protected>
+   
    
     ),
   },
   {
     path: "/cart",
-    element: <Cart/>,
+    element: <Protected><Cart/></Protected>,
   },
   {
     path:"/signin",
@@ -32,12 +39,21 @@ const router = createBrowserRouter([
   },{
     path:"/signup",
     element:<Signup/>
+  },{
+    path:"/details/:id",
+
+    element:  <Details/>
+  },{
+    path:"/test",
+    element:<Test/>
   }
 ]);
 function App() {
   return (
     <>
+    
     <RouterProvider router={router} />
+    
 
   </>
    

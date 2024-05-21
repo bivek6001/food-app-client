@@ -2,7 +2,10 @@ import React from 'react'
 // import { FaOpencart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { GiShoppingCart } from "react-icons/gi";
+import { useSelector } from 'react-redux';
 export default function Header() {
+  const user= useSelector((state)=>state.user.user)
+  console.log(user)
   return (
     <div className='p-[15px] shadow-xl sticky top-0 z-10 bg-white'>
         <div className=" header max-w-[1100px] mx-auto flex justify-between">
@@ -17,8 +20,9 @@ export default function Header() {
        
        </div>
        <Link to="/signin">
-         <div className="login">
+         <div className="login flex flex-col justify-center items-center">
          <img src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png" alt="" className='h-[40px] hover:scale-125 transition ease-in-out' />
+         <div>{user ? `hello ${user.name}` : `Hello`}</div>
         </div></Link> 
 </div>
   
