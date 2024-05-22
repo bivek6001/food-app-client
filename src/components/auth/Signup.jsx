@@ -60,10 +60,10 @@ async function handleSubmit(e) {
           <input className=" text-sm bg-[#F8F8F8] mx-2 w-[80%] outline-none border-none " name="password" type="text" placeholder='Enter your password ' onChange={handleChange} required />
         </div>
       <button type="submit" className="rounded-[5px] font-medium text-white h-10 bg-[#FF2247] w-[120px]">CONTINUE</button>
-    <Link to="/signin">  <p className='text-medium font-medium'>Existing User? Sign in</p></Link>
+    <Link to="/signin">  <p className='text-medium font-medium my-5 text-[#FF2247]'>Existing User? Sign in</p></Link>
       </form>
         </div>
-    <div className="logo">
+    <div className="logo hidden sm:block">
         <img src="https://www.shutterstock.com/image-vector/free-delivery-service-logo-badge-600nw-1505236334.jpg" alt="" className='w-[500px] rounded'/>
     </div>
 

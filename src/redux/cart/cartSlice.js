@@ -12,7 +12,7 @@ name:"cart",
 initialState,
 reducers:{
     addItem:(state,action)=>{
-        state.cart.push(action.payload)
+        state.cart.push(action.payload);
     },
     removeItem:(state,action)=>{
         state.cart.splice(action.payload,1)
