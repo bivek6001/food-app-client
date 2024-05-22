@@ -69,41 +69,31 @@ console.log(cart)
   return (
 
     <div className="container ">
-      <ToastContainer/>
+        {/* <ToastContainer className="block" position="bottom-center"/> */}
+      <ToastContainer  position="bottom-center"/>
      <Header/>
+     <h1 className='max-w-[1100px] mx-auto text-center font-bold text-3xl my-3 '>Your <span className='text-[#65B99E] text-3xl'>CART</span></h1>
 {/* unavailable render code */}
    {cart.length!==0 ? cart.map((p)=>(
     
     <>
-    <div className="cart-box-container">
-    <div className="item-pic max-w-[1100px] mx-auto flex gap-4 items-center p-5 border-b-[1px]">
-      <img src={p.url} alt="item photo" className='w-[100px] h-[100px] object-contain' />
-      <div className="details font-bold">
-      {p.item}
-    </div>
-    <div className="quantity mx-10"> Quantity {1}
-    <select name="" id="">
-    <option value="1">1</option>  <option value="1">1</option>  <option value="1">1</option>
-    </select>
-    
-    
-    </div>
+    <div className="cart-container">
 
-  
+    <div className="wrapper mx-auto max-w-[1100px] flex justify-start items-center border-b-[1px] p-6 gap-2">
 
-    </div>
-    <div className="btn">
-    <button onClick={()=>{
-      toast("deleted successfully")
-    }
-    }>Delete</button>
-
-    </div>
-   
- 
+      <div>
+        <img src={p.url} alt="" className='w-[60px] h-[60px] object-cover rounded-lg'/>
+      </div>
+      <div className="item font-bold">{p.item} by {p.restaurant}</div>
+      <div className="price font-bold mx-9">Price ₹{p.price}</div>
 
 
     </div>
+
+
+
+    </div>
+
     
     
     
@@ -127,17 +117,17 @@ console.log(cart)
 
 
    <div className="checkout mx-auto max-w-[1100px]  ">
-        <button className='bg-yellow-900 ' onClick={()=>{
-          toast.success("initiating order")
-          checkoutHandler(56);
+        <button className='bg-[#FB7087] text-white font-semibold p-2 rounded-lg' onClick={()=>{
+          toast.success("order successful!");
+          
         }}>CHECKOUT</button>
       </div>
 
 
     <div className="contact max-w-[600px] mx-auto my-10">
 
-      <h1 className='font-bold text-xl'> Still have a question?</h1>
-      <button className=' flex justify-center items-center m-10  rounded-[27px] text-base flex-3 p-4 w-[260px] border-[1px] border-black  font-medium'><TbMessageChatbot /> CONTACT US</button>
+      <h1 className='font-bold text-2xl'> Still have a question?</h1>
+      <button className=' hover:scale-125 transition ease-in-out flex justify-center items-center m-10  rounded-[27px] hover:bg-[#ED2736] hover:text-white font-bold text-base flex-3 p-4 w-[260px] border-[1px] border-black  '><TbMessageChatbot className='mx-3 ' /> CONTACT US</button>
     </div>
  
     </div>

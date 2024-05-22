@@ -7,14 +7,14 @@ amount:0
 }
 export const fetchAllProducts= createAsyncThunk(
     "product/fetchAllProducts",async  ()=>{
-        const {data}= await axios.get("http://localhost:8000/product/all");
+        const {data}= await axios.get("https://food-app-backend-0vx6.onrender.com/product/all");
         return data
 
     }
 )
 
 export const fetchProductById= createAsyncThunk("prodcu/fetchById",async (id)=>{
-    const {data}= await axios.get(`http://localhost:8000/product/${id}`);
+    const {data}= await axios.get(`https://food-app-backend-0vx6.onrender.com/product/${id}`);
     return data
 
 })

@@ -22,7 +22,7 @@ function handleChange(e) {
 async function handleSubmit(e) {
   e.preventDefault()
   console.log(credentials)
-  const {data}= await axios.post("http://localhost:8000/user/signup",credentials)
+  const {data}= await axios.post("https://food-app-backend-0vx6.onrender.com/user/signup",credentials)
   // console.log(data)
   // 
   if(data.success){
